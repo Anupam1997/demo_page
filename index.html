@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Demo</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+</head>
+<body>
+<header>
+    <i id="icon" class="fas fa-bars fa-2x" onclick="menu()"></i>
+    <i id="hideIcon" class="fas fa-times fa-2x" onclick="hideMenu()"></i>
+    <div class="titleCard">
+        <img src="starbucks-logo.svg" alt="logo image">
+        <h1 class="title">Starbucks</h1>
+    </div>
+</header>
+
+<nav id="sticky">
+    <ul>
+        <li><a href="#AboutUs" onclick="hideMenu()">About Us</a></li>
+        <li><a href="#text" onclick="hideMenu()">Our Work</a></li>
+        <li><a href="#" onclick="hideMenu()">Partner</a></li>
+        <li><a href="#" onclick="hideMenu()">Contact Us</a></li>
+</nav>
+
+<main id = "AboutUs" >
+    <section class="hero-banner">
+        <h1 class="banner-title">About Us</h1>
+        <div class="hero-text">
+            <h1>Welcome To Starbucks</h1>
+        </div>
+    </section>
+
+    <section id="text" class="text">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum.
+        </p>
+    </section>
+</main>
+<script>
+    function menu(){
+        var x = document.getElementById("sticky");
+        var y = document.getElementById("hideIcon");
+        x.style.display = "block";
+        y.style.display = "block";
+    }
+
+    function hideMenu(){
+        var x = document.getElementById("sticky");
+        var y = document.getElementById("hideIcon");
+        if (screen.width <= 768) {  
+            x.style.display = "none";
+            y.style.display = "none";
+        }
+    }
+
+</script>
+</body>
+</html>
+      
+      
+      
